@@ -1,0 +1,8 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "ignorePaths": ["node_modules", "dist", "coverage", "package-lock.json"],
+  "words": ["nestjs", "prettier", "eslint", "tsconfig"],
+  "ignoreRegExpList": ["/\\b[A-Z0-9]{8,}\\b/"],
+  "useGitignore": true
+}
