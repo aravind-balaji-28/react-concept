@@ -5,7 +5,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import UseState from './views/ReactHooks/useState/index';
 import UseEffect from './views/ReactHooks/useEffect';
+import UseRef from './views/ReactHooks/useRef';
 import './App.css';
+import ControlledUncontrolled from './views/ReactHooks/Controlled-Uncontrolled';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Routes>
           <Route path="useState" element={<UseState />} />
           <Route path="useEffect" element={<UseEffect />} />
+          <Route path="useRef" element={<UseRef />} />
+          <Route path="controlled-uncontrolled" element={<ControlledUncontrolled />} />
         </Routes>
       </BrowserRouter>
     </>
