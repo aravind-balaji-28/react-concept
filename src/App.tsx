@@ -8,6 +8,7 @@ import UseEffect from './views/ReactHooks/useEffect';
 import UseRef from './views/ReactHooks/useRef';
 import './App.css';
 import ControlledUncontrolled from './views/ReactHooks/Controlled-Uncontrolled';
+import UseReducer from './views/ReactHooks/useReducer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="useEffect" element={<UseEffect />} />
           <Route path="useRef" element={<UseRef />} />
           <Route path="controlled-uncontrolled" element={<ControlledUncontrolled />} />
+          <Route path="useReducer" element={<UseReducer />} />
         </Routes>
       </BrowserRouter>
     </>
