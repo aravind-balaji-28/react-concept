@@ -9,6 +9,7 @@ import UseRef from './views/ReactHooks/useRef';
 import './App.css';
 import ControlledUncontrolled from './views/ReactHooks/Controlled-Uncontrolled';
 import UseReducer from './views/ReactHooks/useReducer';
+import UseStateUseReducer from './views/ReactHooks/useState-useReducer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="useRef" element={<UseRef />} />
           <Route path="controlled-uncontrolled" element={<ControlledUncontrolled />} />
           <Route path="useReducer" element={<UseReducer />} />
+          <Route path="useState-useReducer" element={<UseStateUseReducer />} />
         </Routes>
       </BrowserRouter>
     </>
