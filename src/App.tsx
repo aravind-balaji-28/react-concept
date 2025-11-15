@@ -10,6 +10,9 @@ import './App.css';
 import ControlledUncontrolled from './views/ReactHooks/Controlled-Uncontrolled';
 import UseReducer from './views/ReactHooks/useReducer';
 import UseStateUseReducer from './views/ReactHooks/useState-useReducer';
+import UseCallback from './views/ReactHooks/useCallback';
+import Memo from './views/ReactHooks/memo';
+import UseMemo from './views/ReactHooks/useMemo';
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
           <Route path="controlled-uncontrolled" element={<ControlledUncontrolled />} />
           <Route path="useReducer" element={<UseReducer />} />
           <Route path="useState-useReducer" element={<UseStateUseReducer />} />
+          <Route path="useCallback" element={<UseCallback />} />
+          <Route path="memo" element={<Memo />} />
+          <Route path="useMemo" element={<UseMemo />} />
         </Routes>
       </BrowserRouter>
     </>
