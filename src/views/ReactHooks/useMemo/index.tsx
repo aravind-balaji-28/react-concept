@@ -3,6 +3,9 @@
 // what is useMemo?
 // useMemo is a React Hook that lets you cache the result of a calculation between re-renders.
 
+//Imagine
+// 🔹 useMemo → Imagine making a smoothie 🥤. Blending takes effort. Once made, you store it in the fridge and reuse it until the ingredients change. That’s exactly what useMemo does for expensive calculations.
+
 import { useMemo, useState } from 'react';
 
 const UseMemo = () => {

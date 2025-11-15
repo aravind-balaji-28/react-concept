@@ -2,9 +2,14 @@
 // what is memo?
 //  memo lets you skip re-rendering a component when its props are unchanged.
 
+// additional
+
 // Parent re-renders
 // Child does NOT re-render
 // because name="John" did not change
+
+//Imagine
+// React.memo → Think of it like telling React: “Don’t repaint the whole room if nothing has changed.” It prevents unnecessary re-renders when props stay the same.
 
 import { memo, useState } from 'react';
 const Memo = () => {

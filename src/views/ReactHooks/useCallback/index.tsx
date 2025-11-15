@@ -9,6 +9,10 @@
 // with callback
 // useCallback prevents a new function reference
 
+//Imagine
+
+// useCallback → Think of saving a phone number in your contacts ☎️. Instead of writing it fresh every time, you just reuse the saved one. It helps when passing functions to child components.
+
 import { memo, useCallback, useState } from 'react';
 
 type ChildProps = {
