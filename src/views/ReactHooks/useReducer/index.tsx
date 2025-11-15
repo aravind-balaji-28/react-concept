@@ -4,7 +4,11 @@
 
 import { useReducer } from 'react';
 const main = 11;
-const reducer = (state: any, action: any) => {
+interface StateInterface {
+  count: number;
+  title: string;
+}
+const reducer = (state: StateInterface, action: any) => {
   switch (action.type) {
     case 'increment':
       return { ...state, count: state.count + 1 };
