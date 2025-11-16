@@ -13,6 +13,11 @@ import UseStateUseReducer from './views/ReactHooks/useState-useReducer';
 import UseCallback from './views/ReactHooks/useCallback';
 import Memo from './views/ReactHooks/memo';
 import UseMemo from './views/ReactHooks/useMemo';
+import Component1 from './views/ReactHooks/useContext/Component1';
+import Component3 from './views/ReactHooks/useContext/Component3';
+import Component2 from './views/ReactHooks/useContext/Component2';
+import Header from './views/ReactHooks/useContext/ThemeContext/Header';
+import Counter from './views/ReactHooks/useContext/ThemeContext/Counter';
 
 function App() {
   return (
@@ -28,6 +33,11 @@ function App() {
           <Route path="useCallback" element={<UseCallback />} />
           <Route path="memo" element={<Memo />} />
           <Route path="useMemo" element={<UseMemo />} />
+          <Route path="component1" element={<Component1 />} />
+          <Route path="component2" element={<Component2 />} />
+          <Route path="component3" element={<Component3 />} />
+          <Route path="header" element={<Header />} />
+          <Route path="counter" element={<Counter />} />
         </Routes>
       </BrowserRouter>
     </>
