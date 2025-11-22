@@ -18,6 +18,7 @@ import Component3 from './views/ReactHooks/useContext/Component3';
 import Component2 from './views/ReactHooks/useContext/Component2';
 import Header from './views/ReactHooks/useContext/ThemeContext/Header';
 import Counter from './views/ReactHooks/useContext/ThemeContext/Counter';
+import UseTransition from './views/useTransition';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="component3" element={<Component3 />} />
           <Route path="header" element={<Header />} />
           <Route path="counter" element={<Counter />} />
+          <Route path="useTransition" element={<UseTransition />} />
         </Routes>
       </BrowserRouter>
     </>
