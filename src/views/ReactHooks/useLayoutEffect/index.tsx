@@ -1,7 +1,7 @@
 // what is useLayoutEffect?
 // useLayoutEffect is a version of useEffect that fires before the browser repaints the screen.
 
-import React, { useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 
 const UseLayoutEffect = () => {
   console.log('');
