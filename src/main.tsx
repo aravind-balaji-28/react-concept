@@ -6,7 +6,7 @@ import { ThemeProvider } from './views/ReactHooks/useContext/ThemeContext/ThemeC
 // import Counter from './views/ReactHooks/useContext/ThemeContext/Counter.tsx';
 // import Header from './views/ReactHooks/useContext/ThemeContext/Header.tsx';
 // import { AuthProvider } from './views/ReactHooks/useContext/index.tsx';
-
+import '../src/assets/scss/component/icons.css';
 createRoot(document.getElementById('root')!).render(
   <>
     {/* <AuthProvider> */}
