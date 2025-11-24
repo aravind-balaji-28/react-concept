@@ -27,10 +27,10 @@ node {
             usernamePassword(
                 credentialsId: 'docker-hub-credentials',
                 usernameVariable: 'Aravind',
-                passwordVariable: 'Aravind@2828'
+                passwordVariable: 'test@123'
             )
         ]) {
-            bat 'echo Aravind@1128 | docker login -u aravindbalaji28 --password-stdin'
+            bat 'echo test@123 | docker login -u aravindbalaji28 --password-stdin'
             bat 'docker push aravindbalaji28/react-concept'
         }
     }
