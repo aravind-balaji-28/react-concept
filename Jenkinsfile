@@ -1,5 +1,3 @@
-/* Jenkinsfile */
-
 node {
     def app
 
@@ -8,24 +6,32 @@ node {
     }
 
     stage('Build React app') {
-        sh 'npm ci || npm install'
-        sh 'npm run build'
+        // Windows uses "bat" instead of "sh"
+        bat 'npm install'
+        bat 'npm run build'
     }
 
     stage('Build Docker image') {
-        app = docker.build("aravindbalaji28/react-concept")
+        // Use normal docker CLI from Windows
+        bat 'docker build -t aravindbalaji28/react-concept .'
     }
 
     stage('Test image') {
-        app.inside {
-            sh 'echo "Tests passed"'
-        }
+        // Simple test
+        bat 'echo Tests passed'
     }
 
     stage('Push image') {
-        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-            app.push("23")
-            app.push("latest")
+        // Login + push using Windows commands
+        withCredentials([
+            usernamePassword(
+                credentialsId: 'docker-hub-credentials',
+                usernameVariable: 'Aravind',
+                passwordVariable: 'Aravind@2828'
+            )
+        ]) {
+            bat 'echo Aravind@1128 | docker login -u aravindbalaji28 --password-stdin'
+            bat 'docker push aravindbalaji28/react-concept'
         }
     }
 }
