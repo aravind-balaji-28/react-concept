@@ -12,7 +12,6 @@ const UseState: React.FC = () => {
   return (
     <>
       <h3>Count : {count}</h3>
-      <div>Helloworld !!!</div>
       <button onClick={handleClick}>Increment</button>
     </>
   );
