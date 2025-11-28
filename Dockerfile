@@ -1,13 +1,24 @@
 # Build step
-FROM node:22-alpine as build
+FROM node:22-alpine AS build
+
 WORKDIR /app
+
+# Install pnpm globally
+RUN npm install -g pnpm
+
+# (Optional but better for caching)
 COPY package*.json ./
+# Or if you use pnpm-lock.yaml, use:
+# COPY package.json pnpm-lock.yaml ./
+
 RUN pnpm install --legacy-peer-deps
+
 COPY . .
 RUN pnpm run build
 
 # Serve with Nginx
 FROM nginx:alpine
+
 COPY --from=build /app/dist /usr/share/nginx/html
 
 # Replace default Nginx config with our SPA-friendly one
