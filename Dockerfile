@@ -2,9 +2,9 @@
 FROM node:22-alpine as build
 WORKDIR /app
 COPY package*.json ./
-RUN npm install --legacy-peer-deps
+RUN pnpm install --legacy-peer-deps
 COPY . .
-RUN npm run build
+RUN pnpm run build
 
 # Serve with Nginx
 FROM nginx:alpine
