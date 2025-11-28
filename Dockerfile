@@ -11,7 +11,7 @@ COPY package*.json ./
 # Or if you use pnpm-lock.yaml, use:
 # COPY package.json pnpm-lock.yaml ./
 
-RUN pnpm install --legacy-peer-deps
+RUN pnpm install --no-strict-peer-dependencies
 
 COPY . .
 RUN pnpm run build
