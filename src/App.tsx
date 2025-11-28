@@ -26,6 +26,14 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route
+            path="/"
+            element={
+              <div style={{ display: 'flex', justifyContent: 'center', fontSize: '2rem' }}>
+                Welcome React js
+              </div>
+            }
+          />
           <Route path="useState" element={<UseState />} />
           <Route path="useEffect" element={<UseEffect />} />
           <Route path="useRef" element={<UseRef />} />
