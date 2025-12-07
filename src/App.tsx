@@ -21,6 +21,7 @@ import Counter from './views/ReactHooks/useContext/ThemeContext/Counter';
 import UseTransition from './views/ReactHooks/useTransition';
 import UseLayoutEffect from './views/ReactHooks/useLayoutEffect';
 import CustomHooks from './views/CustomHooks';
+import { HOCComponentWithToggle } from './views/HOC';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
           <Route path="useTransition" element={<UseTransition />} />
           <Route path="useLayoutEffect" element={<UseLayoutEffect />} />
           <Route path="custom-hooks" element={<CustomHooks />} />
+          <Route path="hoc" element={<HOCComponentWithToggle />} />
         </Routes>
       </BrowserRouter>
     </>

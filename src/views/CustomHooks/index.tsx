@@ -8,8 +8,10 @@ const CustomHooks: React.FC = () => {
 
   return (
     <>
-      <h3>{isOpen ? 'On' : 'Off'}</h3>
-      <button onClick={toggle}>Click</button>
+      <h2>Custom hooks Concept</h2>
+      <hr />
+      <h3> {isOpen && <p>Content visible</p>}</h3>
+      <button onClick={toggle}>{isOpen ? 'Hide' : 'Show'}</button>
     </>
   );
 };
