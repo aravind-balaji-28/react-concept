@@ -9,6 +9,9 @@
 // 2️⃣ Non-urgent updates (Low Priority)
 // filtering large lists, rendering big tables, expensive calculations, heavy re-renders
 
+//what is significance of key props in react list?
+// key helps React identify which list items changed, were added, or removed, allowing React to update the UI efficiently.
+
 import React, { useState, useTransition } from 'react';
 
 function UseTransition() {
