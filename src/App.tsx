@@ -20,6 +20,7 @@ import Header from './views/ReactHooks/useContext/ThemeContext/Header';
 import Counter from './views/ReactHooks/useContext/ThemeContext/Counter';
 import UseTransition from './views/ReactHooks/useTransition';
 import UseLayoutEffect from './views/ReactHooks/useLayoutEffect';
+import CustomHooks from './views/CustomHooks';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path="counter" element={<Counter />} />
           <Route path="useTransition" element={<UseTransition />} />
           <Route path="useLayoutEffect" element={<UseLayoutEffect />} />
+          <Route path="custom-hooks" element={<CustomHooks />} />
         </Routes>
       </BrowserRouter>
     </>
