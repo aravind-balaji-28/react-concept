@@ -6,7 +6,6 @@ import { useToggle } from './useToggle';
 const CustomHooks: React.FC = () => {
   const [isOpen, toggle] = useToggle({ initial: true });
 
-  console.log(isOpen, 'isOpen 1');
   return (
     <>
       <h3>{isOpen ? 'On' : 'Off'}</h3>
