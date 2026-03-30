@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from "react"
+import React, { createContext, useContext, useMemo } from "react"
 import { useActionInfo } from "../hooks/useActionInfo";
 
 interface IAppContextType {
@@ -11,9 +11,17 @@ const AppContext = createContext<IAppContextType | null>(null)
 export const AppProvider: React.FC<{ children: React.ReactNode }> = ({
     children,
 }) => {
-    const actions = useActionInfo()
+    const { count, increment, decrement } = useActionInfo();
+    const value = useMemo(
+        () => ({
+            count,
+            increment,
+            decrement,
+        }),
+        [count, increment, decrement]
+    );
     return (
-        <AppContext.Provider value={actions}>{children}</AppContext.Provider>
+        <AppContext.Provider value={value}>{children}</AppContext.Provider>
     )
 }
 
