@@ -22,6 +22,7 @@ import UseTransition from './views/ReactHooks/useTransition';
 import UseLayoutEffect from './views/ReactHooks/useLayoutEffect';
 import CustomHooks from './views/CustomHooks';
 import { HOCComponentWithToggle } from './views/HOC';
+import MainPage from './views/ContextConcept/MainPage';
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
           <Route path="useLayoutEffect" element={<UseLayoutEffect />} />
           <Route path="custom-hooks" element={<CustomHooks />} />
           <Route path="hoc" element={<HOCComponentWithToggle />} />
+          <Route path="main-page" element={<MainPage />} />
         </Routes>
       </BrowserRouter>
     </>
