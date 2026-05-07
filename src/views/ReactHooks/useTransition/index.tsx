@@ -1,5 +1,5 @@
 // what is useTransition?
-// useTransition is a React Hook that lets you render a part of the UI in the background.
+// useTransition is a React Hook used for handling asynchronous or heavy UI updates in the background without blocking the user interface.
 
 // without transition
 // 1️⃣ Urgent updates (High Priority)
