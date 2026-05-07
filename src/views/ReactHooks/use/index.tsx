@@ -6,11 +6,9 @@ const getUserInfo = async () => {
     const userResponse = await fetch('https://jsonplaceholder.typicode.com/users')
     return userResponse.json()
 }
-
 const userResult = getUserInfo()
 const UserData = () => {
     const userList = use(userResult)
-    console.log("userList: ", userList);
     return <>
         <ul>
             {userList?.map((e: any) => (
