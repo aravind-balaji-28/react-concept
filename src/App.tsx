@@ -24,6 +24,7 @@ import CustomHooks from './views/CustomHooks';
 import { HOCComponentWithToggle } from './views/HOC';
 import MainPage from './views/ContextConcept/MainPage';
 import Use from './views/ReactHooks/use';
+import DragDrop from './views/Dragdrop';
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
           <Route path="hoc" element={<HOCComponentWithToggle />} />
           <Route path="main-page" element={<MainPage />} />
           <Route path="use" element={<Use />} />
+          <Route path="drag-drop" element={<DragDrop />} />
         </Routes>
       </BrowserRouter>
     </>
