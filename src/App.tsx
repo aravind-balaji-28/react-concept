@@ -25,7 +25,8 @@ import { HOCComponentWithToggle } from './views/HOC';
 import MainPage from './views/ContextConcept/MainPage';
 import Use from './views/ReactHooks/use';
 import DragDrop from './views/Dragdrop';
-
+import ReactWindowVirtualization from './views/ReactWindowVirtualization';
+import CounterClass from "./views/ClassComponent/index.jsx"
 function App() {
   return (
     <>
@@ -53,6 +54,10 @@ function App() {
           <Route path="main-page" element={<MainPage />} />
           <Route path="use" element={<Use />} />
           <Route path="drag-drop" element={<DragDrop />} />
+          <Route path="react-window" element={<ReactWindowVirtualization />} />
+          <Route path="counter-class" element={<CounterClass />} />
+
+
         </Routes>
       </BrowserRouter>
     </>
